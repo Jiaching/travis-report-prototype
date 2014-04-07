@@ -1,0 +1,112 @@
+<html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/detail_style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+
+    <script type="text/javascript" src="js/lineChart.js"></script>
+
+
+
+
+    
+    <title>Travis-Reporter</title>
+<body>
+
+  <div class="content">
+
+
+    <div id="header">           
+    </div>
+    <div class="case-bar">
+      <table>
+        <tr>
+          <td>Test case</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td><select><option>Test case:"make sure wap push in mozSettings exists."
+          </option></select></td>
+          <td><select><option>&#060;5days
+          </option><option>&#060;10days
+          </option></select></td>
+        </tr>
+      </table>  
+    </div>
+    <div class="chart">
+      <div id="chart_div"></div>
+       <table>
+        <tr>
+          <td id="errorText">Error count</td>
+
+        </tr>
+        <tr>
+          <td><canvas id="myChart"></canvas></td>
+        </tr>
+        <tr>
+          <td id="dateText">Date</td>
+        </tr>
+      </table>
+    </div>
+    <div class="riskyTable">
+
+            <div >
+                <table >
+                    <tr>
+                        <td >Status</td>
+                        <td >Build</td>
+                        <td >Message</td>
+                        <td >Commit</td>
+                        <td>Committer</td>
+                        <td>Duration</td>
+                        <td>Finished</td>
+                    </tr>
+                </table>
+              </div>
+             <hr/>
+            <div >
+                <table >
+                    <tr>
+                        <td >failed</td>
+                        <td >353254</td>
+                        <td >adding Configure...</td>
+                        <td >a8d79a4 </td>
+                        <td>Evan</td>
+                        <td>1min 19sec</td>
+                        <td>Finished</td>
+                    </tr>
+                </table>
+              </div>
+             <hr/>
+            <div >
+                <table >
+                    <tr>
+                        <td >failed</td>
+                        <td >58</td>
+                        <td >Revert Bug 933035..</td>
+                        <td >86ff94b</td>
+                        <td>George</td>
+                        <td>1hr 42min 26sec</td>
+                        <td>3 days ago</td>
+                    </tr>
+                </table>
+              </div>
+
+             
+  
+
+    </div>
+  
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+ 
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  
+
+    <title>Travis-Reporter</title>
+
+</head>
+    <body >
+        <div class="content">
+
+
+            <div id="header">
+                
+            </div>
+        <div>
+
+            <div class="nav-bar">
+                <input  type="image" src="./img/bt_home.png" onclick=home() />
+                <input  type="image" src="./img/bt_help.png" />
+            </div>
+    
+            <div class="search-bar">
+                <form>
+ 			        <img src="./img/magnifier.png" alt="" height="60" width="60">
+ 			        <input id="search_input" type="text"  />
+ 			        <input id="search_bt" type="Submit" value="" />
+                </form>
+
+            </div>
+  
+        <div>
+            
+        </div>
+        <div class="range-bar">
+            <table>
+
+                <tr>
+                    <td><img src="./img/searchTool.png" alt="" height="35" width="180"></td>
+                    <td>Component</td>
+                    <td>Error rate</td>
+                    <td>Date range</td>
+                    <td>Display count</td>    
+                </tr>
+                
+                <tr class="combobox" >
+                    <td>
+                    </td>
+                    <td>
+                        <select id="cb_component" onchange="com_component()">
+                            <option></option>
+                            <option>Settings</option>
+                            <option>Google</option>
+                        </select>
+
+                    </td>
+                    <td>
+                        <select id="cb_Error_range" onchange="com_error_range()">
+                            <option></option> 
+                            <option>>50</option>
+                            <option>>90</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="cb_date_range" onchange="com_date_range()"> 
+                            <option></option>  
+                            <option>10 ago</option>
+                            <option>30 ago</option>
+                        </select>
+                    </td> 
+                    <td>
+                        <select>
+                            <option></option> 
+                            <option>&#060;5</option>  
+                            <option>&#060;10</option>
+                            <option>&#060;20</option>
+                        </select>
+                    </td>         
+
+                </tr>
+
+            </table>    
+
+        </div>
+
+
+        <div class="display">
+            <div >
+                <table >
+                    <tr>
+                        <td >Component</td>
+                        <td >Name</td>
+                        <td >Date</td>
+                        <td >Error count</td>
+                        <td></td>
+                    </tr>
+                </table>
+                </div>
+             <hr/>
+             <div id="show">
+                <div>
+                    <table class="lab">
+                        <tr>
+                            <td >google</td>
+                            <td >TOS</td>
+                            <td >2014-04-01</td>
+                            <td >110err/day</td>
+                            <td>
+                                <form action="details.html" target="_blank">
+                                 <input id="bt_detail" type="Submit" value="" />
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr/>
+                <div id="test">
+                <table class="lab">
+                        
+                            <tr>
+                                <td >Settings</td>
+                                <td >battery</td>
+                                <td >2014-04-02</td>
+                                <td >90err/day</td>
+                                <td>
+                                <form action="details.html" target="_blank">
+                                 <input id="bt_detail" type="Submit" value="" />
+                                </form>
+                                </td>
+                             </tr>
+                        </table>
+                </div>
+
+                 <hr/>
+                 <div>
+                    <table class="lab">
+                        <tr>
+                            <td >google</td>
+                            <td >message</td>
+                            <td >2014-04-05</td>
+                            <td >60err/day</td>
+                            <td>
+                                <form action="details.html" target="_blank">
+                                <input id="bt_detail" type="Submit" value="" />
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr/>
+                <div>
+                    <table class="lab">
+                        <tr>
+                            <td >Settings</td>
+                            <td >battery</td>
+                            <td >2014-04-17</td>
+                            <td >55err/day</td>
+                            <td>
+                                <form action="details.html" target="_blank">
+                                 <input id="bt_detail" type="Submit" value="" />
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div>
+                    <table class="lab">
+                        <tr>
+                            <td >Settings</td>
+                            <td >battery</td>
+                            <td >2014-03-20</td>
+                            <td >40err/day</td>
+                            <td>
+                                <form action="details.html" target="_blank">
+                                 <input id="bt_detail" type="Submit" value="" />
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div>
+                    <table class="lab">
+                        <tr>
+                            <td >Settings</td>
+                            <td >battery</td>
+                            <td >2014-04-07</td>
+                            <td >30err/day</td>
+                            <td>
+                                <form action="details.html" target="_blank">
+                                 <input id="bt_detail" type="Submit" value="" />
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr>
+                <div>
+                    <table class="lab">
+                        <tr>
+                            <td >Travis-Reporter</td>
+                            <td >oolab</td>
+                            <td >2014-04-08</td>
+                            <td >Nerver</td>
+                            <td>
+                                <form action="details.html" target="_blank">
+                                 <input id="bt_detail" type="Submit" value="" />
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </body>
+ 
+</html>

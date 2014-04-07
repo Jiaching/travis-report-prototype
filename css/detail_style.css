@@ -1,0 +1,116 @@
+
+body
+{
+	
+	background-image: url("../img/background.png");
+	
+}
+body .content
+{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#header
+{
+	background-image: url("../img/details_header.png");
+	width: 1280px;
+	height: 80px;	
+}
+
+
+.case-bar
+{
+	background-image: url("../img/block_home.png");
+	margin-top: -4px;
+	width: 1280px;
+	height: 90px;
+
+}
+.case-bar table
+{
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 10px;
+	border-collapse:separate;
+  	border-spacing:15px 0px;
+}
+.chart
+{
+	background-image: url("../img/block_chart.png");
+	margin-top: -4px;
+	width: 1280px;
+	height: 300px;
+	background-repeat: no-repeat;
+}
+.chart_div
+{		
+	top: 10px;
+	margin-left: 15px;
+	width: 400px;
+	height: 400px;
+	
+}
+#myChart
+{
+	top: 10px;
+	margin-left: 15px;
+	width: 400px;
+	height: 400px;
+}
+
+.chart table
+{
+	margin-left: 4%;
+	font-size: 30px;
+	font-weight: bold;
+	table-layout: fixed;
+
+}
+#myChart
+{
+	position: relative;
+	top: 20px;
+}
+#errorText
+{
+	position: relative;
+	top: 5px;
+}
+#dateText
+{
+	position: relative;
+	top: 20px;
+	left: 100%;
+}
+.riskyTable
+{
+	background-image: url("../img/block_risky.png");
+	width: 1280px;
+	height: 300px;
+
+
+}
+.riskyTable table
+{
+	position: relative;
+	top: 10px;
+	margin-left: 2%;
+	font-size: 30px;
+	font-weight: bold;
+	width: 100%;
+	table-layout: fixed;
+
+}
+
+hr{
+	margin-left: 2%;
+	margin-right: 3%;
+
+}
+
+
+
+
+
+
